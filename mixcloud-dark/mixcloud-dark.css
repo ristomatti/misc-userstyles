@@ -1,0 +1,38 @@
+@media screen {
+
+/* Leading rule */
+html {
+  -webkit-filter: invert(100%) hue-rotate(180deg) contrast(80%) grayscale(30%) !important;
+}
+
+/* Contrary rule */
+img, iframe, video, *:not(object):not(body)>embed, object,
+*[style*="background:url"]:empty, *[style*="background-image:url"]:empty,
+*[style*="background: url"]:empty, *[style*="background-image: url"]:empty {
+  -webkit-filter: invert(100%) hue-rotate(180deg) !important;
+}
+
+/* Text contrast */
+html {
+  text-shadow: 0 0 0 !important;
+}
+
+/* Full screen */
+*:-webkit-full-screen, *:-webkit-full-screen * {
+  -webkit-filter: none !important;
+}
+
+/* Page background */
+html {
+  background: rgb(25,25,25) !important;
+}
+
+div.player-wrapper *:not(span):not([class*="player-volume-toggle-icon"]):not([class*="player-volume-amount"]):not([class*="player-volume-track"]):not([class*="player-volume-percent"]):not([class*="player-control"]):not([class*="player-next-toggle"]) {
+	background: #FFF !important;
+	color: #000 !important;
+}
+
+.up-next-area.up-next-open:after,
+.up-next-area.up-next-open.blur-left:before {
+	display: none;
+}
