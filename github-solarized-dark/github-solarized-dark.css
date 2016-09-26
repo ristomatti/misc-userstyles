@@ -1,0 +1,5 @@
+@-moz-document domain("github.com") {
+pre, .markdown-format pre, .markdown-body pre, .markdown-format .highlight pre, .markdown-body .highlight pre, body.blog pre, #facebox pre, .blob-expanded, .terminal, .copyable-terminal, #notebook .input_area, .blob-code-context, .ace_editor, .highlight {
+	background: #141414 !important;	
+}
+}
