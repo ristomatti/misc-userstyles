@@ -1,0 +1,40 @@
+@-moz-document regexp("https://mail.google.com/mail/.*/.*/.*/.+") {
+@media screen {
+
+/* Leading rule */
+.AO {
+  -webkit-filter: invert(100%) hue-rotate(180deg) contrast(87%) grayscale(30%) !important;
+}
+
+/* Contrary rule */
+img:not(.irc_mi):not(.irc_rii):not(.irc_mut):not(.amI):not(.amJ):not(.adk):not(.adj):not([src*="ic_"]):not([src*="black"]),
+iframe, video, embed, .gbii, .gbip, .azp, .aLF-aPX-KP, .irc_bg, .RY3tic, canvas.circle {
+  -webkit-filter: invert(100%) hue-rotate(180deg) !important;
+}
+
+/* Text contrast */
+div.AO {
+  text-shadow: 10 10 10 !important;
+}
+
+	/* scroll bar */
+
+::-webkit-scrollbar {
+ max-width: 10px !important;
+ max-height: 10px !important;
+ background: #181818 !important;
+}
+::-webkit-scrollbar-track,
+::-webkit-scrollbar-corner {
+ background: #DFDFDF !important;
+}
+::-webkit-scrollbar-thumb {
+ border-radius: 5px !important;
+ background: rgba(80, 80, 80, .6) !important;
+}
+::-webkit-scrollbar-thumb:hover {
+ background: rgba(96, 96, 96, .6) !important;
+}
+
+}
+}
